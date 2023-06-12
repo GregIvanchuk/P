@@ -3,7 +3,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const app = express();
 const port = 5000;
 require('dotenv').config();
-const botToken =  process.env.TELEGRAM_BOT_TOKEN;;
+const botToken =  process.env.TELEGRAM_BOT_TOKEN;
 const cors = require('cors'); // доданий рядок
 const bot = new TelegramBot(botToken, { polling: true });
 app.use(cors()); // middleware для використання CORS
